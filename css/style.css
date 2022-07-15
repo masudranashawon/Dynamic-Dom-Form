@@ -1,0 +1,494 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: url('../images/background.jpg') 0 0/90px; ;
+}
+/*
+`````````````````````
+   GLOBAL CSS START  |
+`````````````````````
+*/
+.w-30 {
+	width: 30%;
+	float: left;
+}
+
+.w-70 {
+	width: 70%;
+	float: left;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+/*
+`````````````````````
+    GLOBAL CSS END   |
+`````````````````````
+*/
+
+
+/*
+`````````````````````
+   Local CSS start   |
+`````````````````````
+*/
+
+/* Header area Start */
+
+.header-area {
+	padding: 10px 0 10px 0;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.header-area .logo img {
+	width: 40%;
+}
+
+.header-area .name h1 {
+	font-size: 52px;
+	color: #f1c40f
+}
+
+.header-area .name p {
+	font-size: 18px;
+	color: #009432;
+	font-weight: bold;
+	float: right;
+}
+
+.header-area .name .wrap {
+	width:40%;
+	float: right;
+}
+
+.header-area  .color {
+	color: #3498db;
+}
+
+.stdu-form .container{
+	border-bottom:1px solid #1f3444;
+	border-top:1px solid #1f3444;
+}
+
+.stdu-form p {
+	color: #44bd32;
+	text-align: center;
+	font-weight: bold;
+	padding: 4px;
+}
+
+/* Header area End */
+
+/* FORM area Start */
+label.reg {
+	color: red;
+}
+
+form {
+	margin:10px 0 20px 0;
+}
+
+#reg-no {
+    color: #FFF;
+	border: 1px solid #565656;
+    width: 225px;
+    text-align: center;
+    background: #08a4ff;
+    padding: 2px;
+}
+
+form h3 {
+	color: #009432;
+}
+
+form > label {
+	color:#0e4e7b;
+	
+}
+form .main > label {
+	color:#0e4e7b;
+	font-size: 20px;
+	 font-family: 'Merienda', cursive;
+}
+
+form .main > input {
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    color: #073a5f;
+    outline: none;
+    border-bottom: 2px dotted #0e4e7b;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+	background: #0000;
+}
+
+#email {
+	width: 340px;
+}
+
+.main{
+	margin:15px 0 20px 0;
+}
+
+.gen {
+	font-weight: bold;
+	color:#0e4e7b;
+	margin-right:10px
+}
+
+.dob{
+	font-weight: bold;
+    color: #0e4e7b;
+	margin-left:65px;
+}
+
+.test {
+	font-weight: bold;
+	color: #0e4e7b;
+	margin: 20px 10px 0 0;
+	display: inline-block;
+}
+
+#date {
+	border: none;
+	outline: none;
+	color: #073a5f;
+	background: #0000;
+}
+
+#male{
+	color: #073a5f;
+	margin-right: 5px;
+}
+
+#female{
+	color: #073a5f;
+	margin-right: 5px;
+}
+
+.clr{
+	background-color:#7efff5;
+	padding:5px;
+	border-radius: 5px;
+	margin: 0 8px 12px 0;
+	display: inline-block;
+	border: 1px solid #0469ff;
+}
+
+form .address > label {
+	color:#0e4e7b;
+	font-size: 17px;
+	 font-family: 'Merienda', cursive;
+}
+
+form .address > input {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    color: #073a5f;
+    outline: none;
+    border-bottom: 2px dotted #0e4e7b;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+	background: #0000;
+}
+
+#f-name {
+	text-transform: capitalize;
+}
+
+.edu label {
+	color: #0e4e7b;
+	font-weight: bold;
+}
+
+.edu {
+	overflow: hidden;
+	margin: 15px 0 15px 0;
+}
+
+.edu h3{
+	margin-bottom: 10px;
+}
+
+.extra {
+	width: 30%;
+	float:left
+}
+
+.more {
+	width:30%;
+	float: left;
+}
+
+form .edu input {
+	margin: 5px 5px 0 0;
+}
+
+.learn label {
+	color: #009432;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.learn select {
+	color: #1476f4;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 5px;
+	background: #0000;
+}
+
+.photo {
+	width: 170px;
+    height: 170px;
+    background: #0b99ff1c;
+    position: absolute;
+    top: 230px;
+    right: 135px;
+    border: 1.5px solid #0e4e7b;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.img-section label {
+	color: #0e4e7b;
+	position: absolute;
+	top: 365px;
+	right: 135px;
+	overflow: visible;
+	width: 150px;
+}
+
+.photo input {
+	font-size: 12px;
+	position: absolute;
+	top: 42%;
+	outline: none;
+	left: 0;
+}
+
+.img-section {
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+input[type="submit"] {
+	background: #024af2;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	border: 1px solid #0837a6;
+	border-radius: 12px;
+	font-size: 18px;
+	transition: box-shadow 0.5s, background 0.5s;
+	margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+	background: #0a328e;
+	box-shadow: 4px 3px 10px 2px #373636;
+}
+/* Form area End */
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	THIS SECTION FOR RESPONSIVENEES   |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Small monitor Display CSS*/
+@media only screen and (max-width:1024px){
+	.header-area .logo img {
+		width: 50%;
+	}
+	.header-area .name .wrap {
+		width: 70%;
+	}
+	.header-area .name p {
+		margin-right: 120px;
+	}
+	.photo {
+		right: 100px;
+	}
+	.img-section label {
+		right: 102px;
+	 }
+	 form .address > input {
+		font-size: 11px;
+	}
+	form .address > label {
+		font-size: 15px;
+	}
+	.more {
+		width: 35%;
+	}
+}
+
+/* Tablets Display CSS*/
+
+@media only screen and (max-width: 768px){
+	.container {
+		width: 90%;
+	}
+	
+	.header-area .name h1 {
+		font-size: 45px;
+	}
+	
+	.header-area .name p {
+		margin-right: 2px;
+	}
+	
+	.photo {
+		right: 40px;
+	}
+	
+	.img-section label {
+		right: 40px;
+	}
+	
+	form .address > input {
+		font-size: 9px;
+	}
+	
+	.header-area .name .wrap {
+		width: 51%;
+	}
+	
+	.more {
+		width: 45%;
+	}
+	
+	.extra {
+		width: 35%;
+		float: left;
+	}
+}
+
+/*All Mobile Display CSS*/
+@media only screen and (max-width: 425px){
+	.header-area .logo img {
+		width: 80%;
+	}
+
+	.header-area .name .wrap {
+		width: 92%;
+	}
+
+	form .main > label {
+		font-size: 18px;
+	}
+
+	form .main > input {
+		font-size: 15px;
+	}
+
+	#email {
+		width: 215px;
+	}
+
+	.dob {
+		margin: 15px 0 0 0;
+		display: block;
+	}
+
+	form .address > label {
+		font-size: 17px;
+	}
+	
+	form .address > input {
+		font-size: 25px;
+	}
+
+	.extra {
+		width: 60%;
+	}
+
+	.more {
+		width: 75%;
+	}
+
+	.photo {
+		display: none;
+	}
+
+	.img-section label {
+		display: none;
+	}
+
+	.header-area .name .wrap {
+		width: 100%;
+	}
+
+	.header-area .name h1 {
+		font-size: 35px;
+	}
+
+	.header-area .name p {
+		margin-right: 12px;
+		font-size: 12px;
+	}
+
+	form .main > label {
+		font-size: 16px;
+	}
+	
+	form .main > input {
+		font-size: 9px;
+	}
+
+	#email {
+		width: 140px;
+	}
+
+	form .address > label {
+		font-size: 16px;
+	}
+
+	form .address > input {
+		font-size: 25px;
+	}
+
+	.extra {
+		width: 80%;
+	}
+
+	.more {
+		width: 100%;
+	}
+	
+	.learn label {
+		display: block;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width:375px){
+	form .address > input {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width:320px){
+	form .address > input {
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+

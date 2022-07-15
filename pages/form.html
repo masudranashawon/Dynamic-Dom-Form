@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>STUDENTS APPLICATION FORM</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body> 
+	<header class="header-area">
+		<div class="container">
+			<div class="logo w-30">
+				<img src="../images/logo.png" alt="logo">
+			</div>
+			<div class="name w-70">
+				<div class="wrap">
+					<h1>Web <span class="color">Ground</span></h1>
+					<p>Stay with us and learn deeply</p>
+				</div>
+			</div>
+		</div>
+	</header>
+		
+	<div class="stdu-form">
+		<div class="container">
+			<p>STUDENTS &nbsp; APPLICATION &nbsp; FORM</p>
+		</div>
+	</div>
+		
+	
+	<div class="container">
+		<form action="#" autocomplete="off">
+				<label for="reg-no" class="reg">Reg.No</label>
+				<input type="text" name="reg-no" id="reg-no" value="GETTING AFTER REGISTRATION" disabled>
+				<div class="main">
+					<h3>PERSONAL INFORMATION</h3>
+					<label for="f-name">Write Your Name:</label>
+					<input type="text" name="f-name" id="f-name" required> <br>
+					<label for="password">Give Any Password:</label>
+					<input type="password" name="password" id="password" minlength="8" autocomplete="off" required><br>
+					<label for="email">Email ID:</label>
+					<input type="email" name="email" id="email" required><br>
+					<label for="number">Mobile Number:</label>
+					<input type="tel" name="number" id="number"  maxlength="11" required><br>
+					<label for="nationality">Nationality:</label>
+					<input type="text" name="nationality" id="nationality" required>
+					</div>
+				<span class="gen">Gender</span>
+				<input type="radio" name="gender" id="male" value="Male">
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="female" value="Female">
+				<label for="female">Female</label>
+				<label for="date" class="dob">Date of Birth:</label>
+				<input type="date" name="date" id="date" required> <br>
+				<span class="test">Eye Test</span>
+				<label for="color">Make This Colour <span class="clr"> &nbsp; &nbsp; </span></label>
+				<input type="color" name="color" id="color">
+				<h3>ADDRESS</h3>
+				<div class="address">
+					<label for="street">Street:</label>
+					<input type="text" name="street" id="street" required>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" required>
+					<label for="post">Post:</label>
+					<input type="text" name="post" id="post" required>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" required>
+					</div>
+				<div class="edu">
+					<h3>EDUCATIONAL BACKGROUND</h3>
+					<div class="extra">
+						<input type="checkbox" name="psc" id="psc" value="PSC">
+						<label for="psc">Primary School Certificate</label><br>
+						<input type="checkbox" name="jsc" id="jsc" value="JSC">
+						<label for="jsc">Junior School Certificate</label><br>
+						<input type="checkbox" name="ssc" id="ssc" value="SSC">
+						<label for="ssc">Secondary School Certificate</label><br>
+						<input type="checkbox" name="hsc" id="hsc" value="HSC">
+						<label for="hsc">Higher Secondary Certificate </label><br>
+						<input type="checkbox" name="ba" id="ba" value="B.A">
+						<label for="ba">Bachelor of Arts</label><br>
+						</div>
+						<div class="more">
+							<input type="checkbox" name="bbs" id="bbs" value="B.B.S">
+							<label for="bbs"> Bachelor of Business Studies</label><br>
+							<input type="checkbox" name="bss" id="bss" value="B.S.S">
+							<label for="bss">Bachelor of Social Science</label><br>
+							<input type="checkbox" name="bba" id="bba" value="B.B.A">
+							<label for="bba">Bachelor of Business Administration</label><br>
+							<input type="checkbox" name="mba" id="mba" value="M.B.A">
+							<label for="mba">Masters of Business Administration</label><br>
+							<input type="checkbox" name="bcs" id="bcs" value="B.C.S">
+							<label for="bcs">Bangladesh Civil Service</label><br>
+							</div>
+					</div>
+			<div class="learn">
+				<label for="courses" class="heading"> WHICH COURSE YOU WANT TO LEARN?</label>
+				
+				<select name="courses" id="courses">
+					<option value="YOU DONT SELECT ANY COURSE">SELECT YOUR COURSE</option>
+					<optgroup label="FRONTEND DEVELOPMENT">
+					<option value="HTML">HTML</option>
+					<option value="CSS">CSS</option>
+					<option value="BOOTSTRAP">BOOTSTRAP</option>
+					<option value="JAVASCRIPT">JAVASCRIPT</option>
+					<option value="JQUERY">JQUERY</option>
+					<option value="REACT.JS">REACT.JS</option>
+					<optgroup label="BACKEND DEVELOPMENT">
+					<option value="PHP">PHP</option>
+					<option value="PYTHON">PYTHON</option>
+					<option value="NODE.JS">NODE.JS</option>
+					<option value="MYSQL">MYSQL</option>
+					<option value="LARAVEL">LARAVEL</option>
+				</select>
+			</div>
+			<div class="img-section">
+				<div class="photo">
+					<input type="file" name="image" id="image" accept="image/*">	
+				</div>
+				<label for="photo">Upload Your Photo</label>
+			</div>
+				<input type="submit" name="submit" id="submit" value="Register Now" onclick="userin()" title="IF ALL INFO FILD THEN SUMBIT">
+			</form>
+	</div>
+	
+	<script>
+		"use strict";
+		
+		function userin(){
+		let userName = document.getElementById("f-name").value;
+		let uPassword = document.getElementById("password").value;
+		let uEmail = document.getElementById("email").value;
+		let uNumber = document.getElementById("number").value;
+		let uNationality = document.getElementById("nationality").value;
+		let uGenderF = document.getElementById("female").checked;
+		let uGenderM = document.getElementById("male").checked;
+		let uStreet = document.getElementById("street").value;
+		let uCity = document.getElementById("city").value;
+		let uPost = document.getElementById("post").value;
+		let uState = document.getElementById("state").value;
+		let uCourse = document.getElementById("courses").value;
+		
+		document.write(`<div style="background:url('../images/other-background.jpg'); position: absolute; width: 99%;    height: 660px; z-index: -1;"> </div>`);
+		
+		if ( userName == '',  uPassword == '', uEmail == '', uNumber == '', uStreet == '', uCity == '', uPost == '',  uState=='', uCourse == "YOU DONT SELECT ANY COURSE" ) {
+			document.write(`<div style="background-color: #f50505; color: #FFF; font-size: 25px; text-align: center; overflow: hidden; padding: 15px;"><img src="../images/error.png" alt="error image" style="width: 70px; padding: 6px 30px 0 0;margin-bottom: -16px;"><h1 style="margin:0; display: inline-block;"> APPLICATION SUBMITION FAILD</h1></div>`);
+		}else {
+			document.write(`<div style="background-color: #44bd32; color: #FFF; font-size: 25px; text-align: center; overflow: hidden; padding: 15px;"><img src="../images/logo.png" alt="logo" style="width: 70px; padding: 6px 30px 0 0; margin-bottom: -15px;"><h1 style="margin:0; display: inline-block;"> APPLICATION SUCCESFULLY SUBMITED</h1></div>`);
+		}
+		
+		if ( userName == '' ) {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR NAME IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(YOU DON'T ENTER ANY NAME)</span></p>`);
+		}else {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR NAME IS: <span style="color: #4a69bd; font-size:22px; text-transform: uppercase">${userName}</span></p>`);
+		}
+		
+		if ( uPassword == '' ) {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR PASSWORD IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(YOU DON'T ENTER ANY PASSWORD)</span></p>`);
+		}else {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px" >YOUR PASSWORD IS: <span style="color: #eb2f06; font-size:22px; font-weight:bold">${uPassword}</span></p>`);
+		}
+		
+		if ( uEmail == '' ) {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR EMAIL IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(YOU DON'T ENTER ANY EMAIL ADDRESS)</span></p>`);
+		}else {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px" >YOUR EMAIL IS: <span style="color: #4a69bd; font-size:22px; text-transform: lowercase">${uEmail}</span></p>`);
+		}
+		
+		if ( uNumber == '' ) {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR NUMBER IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(YOU DON'T ENTER ANY PHONE NUMBER)</span></p>`);
+		}else {
+			document.write(`<p style="color:#273c75; display: block; font-size:22px" >YOUR NUMBER IS: <span style="color: #4a69bd; font-size:22px; text-transform: uppercase">${uNumber}</span></p>`);
+		}
+		
+		if ( uNationality == '' ){
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR NATIONALITY IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(YOU DON'T ENTER YOUR NATIONALITY)</span></p>`);
+			}else {
+				document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR NATIONALITY IS: <span style="color: #4a69bd; font-size:22px; text-transform: uppercase">${uNationality}</span></p>`)
+			}
+			
+		if ( uGenderF == true ){
+		document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR ARE A : <span style="color: #4a69bd; font-size:22px; text-transform: uppercase"> FEMALE GENDER PERSON</span></p>`)
+		}
+		
+		if ( uGenderM == true ){
+		document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR ARE A : <span style="color: #4a69bd; font-size:22px; text-transform: uppercase"> MALE GENDER PERSON</span></p>`)
+		};
+		
+		if ( uCourse == "YOU DONT SELECT ANY COURSE" ){
+			document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR SELECTED COURSE IS: <span style="color: #eb2f06; font-size:22px; text-transform: uppercase">error 404 !(${uCourse})</span></p>`);
+			}else {
+				document.write(`<p style="color:#273c75; display: block; font-size:22px">YOUR SELECTED COURSE IS: <span style="color:  #4a69bd; font-size:22px; text-transform: uppercase; font-weight:bold">${uCourse}</span></p>`)
+			}
+			
+		
+		if ( uStreet == '', uCity == '', uPost== '', uState== ''){
+			document.write(`<p style="color:#273c75; font-size:22px">YOUR ADDRESS IS HAERE <span style="color:#eb2f06; display: inline-block; font-size:22px"> &nbsp;EROR 404 !(PLEASE FULL FILL ALL ADDRESS STREET,CITY,POST AND STATE)</p>`);
+			}else {
+				document.write(`<span style="color:#273c75; display: inline-block; font-size:22px">YOUR ADDRESS IS HAERE: <span style="color: #3a5bb7; font-size:22px; text-transform: uppercase">STREET: <span style="font-weight:bold">${uStreet}</span>&nbsp;</span></span><span style="color:#3a5bb7; display: inline-block; font-size:22px">&nbsp;&nbsp;CITY: <span style="color: #4a69bd; font-size:22px; text-transform: uppercase; font-weight:bold">${uCity}&nbsp;</span></span><span style="color:#3a5bb7; display: inline-block; font-size:22px">&nbsp;&nbsp;POST: <span style="color: #4a69bd; font-size:22px; text-transform: uppercase; font-weight:bold">${uPost}&nbsp;</span></span><span style="color:#3a5bb7; display: inline-block; font-size:22px">&nbsp;&nbsp;STATE:<span style="color: #4a69bd; font-size:22px; text-transform: uppercase; font-weight:bold">${uState}</span></span>`)
+				document.write(`<p style="background-color:#44bd32a1; text-align:center; color: #252723; padding: 15px; font-weight:bold">DEAR <span style="font-weight:bold; color:#3120bf;; text-transform:uppercase;">${userName}</span> YOUR FORM APPLICATION IS SUCCESFULLY SUBMITED.PLEASE WAIT OUR TEAM CONTACT YOU SOON AS POSIBLE.</p>`);
+			};
+			
+		};
+	</script>
+</body>
+</html>
